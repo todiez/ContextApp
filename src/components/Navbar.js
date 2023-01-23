@@ -7,6 +7,7 @@ class Navbar extends Component {
       <ThemeContext.Consumer>
         {(context) => {
           const { isLightTheme, light, dark } = context;
+          console.log(isLightTheme);
           const theme = isLightTheme ? light : dark;
           return (
             <nav style={{ background: theme.ui, color: theme.syntax }}>
